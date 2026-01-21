@@ -1,3 +1,3 @@
 # AI-Code-Review-Tool
 
-added some words
+should code reveiw the commit via gpt-5-nano
