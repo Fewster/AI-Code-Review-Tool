@@ -1,7 +1,6 @@
 name: AI Code Review
 
-on:
-  pull_request:
+on: push
 
 permissions:
   contents: read
