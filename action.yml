@@ -4,8 +4,11 @@ description: Reviews pull requests using OpenAI
 runs:
   using: composite
   steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
+      with:
+        repository: Fewster/AI-Code-Review-Tool
+        path: ai-code-reviewer
+
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -17,5 +20,6 @@ runs:
       shell: bash
 
     - name: Run code review
-      run: python code_review.py
+    - run: python ai-code-reviewer/code_review.py
       shell: bash
+
